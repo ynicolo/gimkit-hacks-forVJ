@@ -2,9 +2,6 @@
  * @name equip gim
  * @description Allows you to use any gim in game
  * @author Nicolo
- * @version 0.6.2
- * @downloadUrl https://raw.githubusercontent.com/Gimloader/client-plugins/main/plugins/CharacterCustomization/build/CharacterCustomization.js
- * @webpage https://gimloader.github.io/plugins/charactercustomization
  * @hasSettings true
  * @gamemode 2d
  */

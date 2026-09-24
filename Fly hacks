@@ -2,7 +2,6 @@
  * @name fly
  * @description set to 10000, 8, 10000
  * @author Nicolo
- * @version 0.2.0
  * @hasSettings true
  * @gamemode 2d
  */

@@ -1,0 +1,19 @@
+/**
+ * @name ultra fun game thing
+ * @description Lets you start games with a stupid amont of settings 
+ * @author Nicolo
+ */
+
+// plugins/UncappedSettings/src/index.ts
+api.net.modifyFetchResponse("/api/experience/map/hooks", (data) => {
+  for (const hook of data.hooks) {
+    const key = hook.key.toLowerCase();
+    if (key.includes("duration")) {
+      hook.options.min = 1;
+      hook.options.max = 60;
+    } else if (key.includes("question")) {
+      hook.options.min = -1e11 + 1;
+      hook.options.max = 1e11 - 1;
+    }
+  }
+});
